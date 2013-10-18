@@ -1,5 +1,5 @@
 # 7L7W Week 1 - Ruby: Day 1
-# Notes
+# Notes for discussion and experimentation
 # Will Green - http://flux.org.uk
 
 Ruby API Docs: http://www.ruby-doc.org
@@ -50,3 +50,8 @@ Ruby Ranges:
          => [] 
 
     Could use downto method for integers.
+
+    Python range function has option of step:
+    >>> range(0,-10,-1)
+    [0, -1, -2, -3, -4, -5, -6, -7, -8, -9]
+    Is there a Ruby equivalent?
