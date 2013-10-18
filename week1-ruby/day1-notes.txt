@@ -1,0 +1,52 @@
+# 7L7W Week 1 - Ruby: Day 1
+# Notes
+# Will Green - http://flux.org.uk
+
+Ruby API Docs: http://www.ruby-doc.org
+Programming Ruby book: http://www.ruby-doc.org/docs/ProgrammingRuby/
+
+String substitute: 
+ - str['old'] = 'new'
+ - gsub(pattern, replacement) and gsub!(pattern, replacement)
+
+Regular Expressions:
+    http://www.ruby-doc.org/core/Regexp.html
+
+> /fish/.match('banana')
+ => nil 
+> /fish/.match('fishing')
+ => #<MatchData "fish"> 
+
+    Seems familiar from Perl etc.
+
+Ruby Ranges:
+    http://ruby-doc.org/core/Range.html
+
+    Counting up works as expected with .. and ...
+        > (0..10).to_a
+         => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+
+        > (0...10).to_a
+         => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] 
+
+        > ('a'..'f').to_a
+         => ["a", "b", "c", "d", "e", "f"] 
+        
+        > ('a'...'f').to_a
+         => ["a", "b", "c", "d", "e"] 
+
+    But doesn't work down:
+
+        > (10..0).to_a
+         => [] 
+
+        > (10...0).to_a
+         => [] 
+
+        > ('f'..'a').to_a
+         => [] 
+
+        > ('f'...'a').to_a
+         => [] 
+
+    Could use downto method for integers.
