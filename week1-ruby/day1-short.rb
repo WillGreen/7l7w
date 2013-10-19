@@ -4,5 +4,5 @@
 
 puts 'Hello, World.'
 puts 'Hello, Ruby.'.index('Ruby')
-(1..10).each { puts 'Flux' }  # could use a while or similar too
+10.times { puts 'Flux' }
 (1..10).each { |n| puts "This is sentence number #{n}" }
