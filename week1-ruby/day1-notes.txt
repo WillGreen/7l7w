@@ -5,9 +5,11 @@
 Ruby API Docs: http://www.ruby-doc.org
 Programming Ruby book: http://www.ruby-doc.org/docs/ProgrammingRuby/
 
+
 String substitute: 
  - str['old'] = 'new'
  - gsub(pattern, replacement) and gsub!(pattern, replacement)
+
 
 Regular Expressions:
     http://www.ruby-doc.org/core/Regexp.html
@@ -18,6 +20,7 @@ Regular Expressions:
  => #<MatchData "fish"> 
 
     Seems familiar from Perl etc.
+
 
 Ruby Ranges:
     http://ruby-doc.org/core/Range.html
