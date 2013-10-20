@@ -5,7 +5,7 @@
 puts 'RubyWang'
 puts '--------'
 
-while (true)
+loop do
     number = rand(10)
     guess = gets.to_i
     if guess == number
