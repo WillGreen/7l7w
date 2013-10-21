@@ -14,10 +14,10 @@ String substitute:
 Regular Expressions:
     http://www.ruby-doc.org/core/Regexp.html
 
-> /fish/.match('banana')
- => nil 
-> /fish/.match('fishing')
- => #<MatchData "fish"> 
+    > /fish/.match('banana')
+     => nil 
+    > /fish/.match('fishing')
+     => #<MatchData "fish"> 
 
     Seems familiar from Perl etc.
 
