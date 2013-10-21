@@ -14,11 +14,6 @@ end
 pattern = ARGV[0]
 filename = ARGV[1]
 
-line_number = 0
-
 File.open(filename, 'r') do |f| 
-    f.each_line do |l|
-        line_number += 1
-        print "#{line_number} #{l}" if /#{pattern}/.match(l)
-    end
+    f.each_line { |l| print "#{f.lineno} #{l}" if l.match(pattern) }
 end

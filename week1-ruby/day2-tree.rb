@@ -4,12 +4,13 @@
 
 class Tree
     attr_accessor:children, :node_name
-
+    
+    # should look at doing this with collect
     def initialize(name, children)  # expects children to be a hash of hashes
         @children = []
         if name.nil?  # get root from children
-            @node_name = children.keys[0]
-            children = children.values[0]
+            @node_name = children.keys.first
+            children = children.values.first
         else
             @node_name = name
         end

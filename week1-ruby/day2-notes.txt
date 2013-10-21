@@ -36,6 +36,15 @@ Translate hash into array (and vice versa):
     > animals.values
      => ["lions", "tigers", "bears"] 
 
+    To turn a hash into an array of array pairs:
+
+    > animals.keys.zip(animals.values)
+     => [[1, "lions"], [2, "tigers"], [3, "bears"]] 
+
+    or, if you're feeling lazy ;)
+    > animals.to_a
+     => [[1, "lions"], [2, "tigers"], [3, "bears"]] 
+
     Depending on what you want, turning arrays into hashes is as simple as using the array in the constructor:
 
     animals_array = [1, 'lions', 2, 'tigers', 3, 'bears']
@@ -43,6 +52,7 @@ Translate hash into array (and vice versa):
 
     animals_hash = Hash[*animals_array]  # use splat to convert to many args - don't know if this is efficient!
      => {1=>"lions", 2=>"tigers", 3=>"bears"} 
+    # won't work for arbitrary structures though, e.g. odd number of elements or array of arrays
 
     If it's a multi-dimensional array we could use the flatten method (e.g. an array of arrays holding two values).
 
@@ -51,7 +61,7 @@ Iterate through hash:
 
     Use one of the each methods with a block, for example:
 
-    > animals.each_pair { |k, v| puts "#{k} = #{v}" }
+    > animals.each_pair { |k, v| puts "#{k} = #{v}" }  # just .each also works
     1 = lions
     2 = tigers
     3 = bears

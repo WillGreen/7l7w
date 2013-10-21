@@ -2,6 +2,8 @@
 # CSV Class
 # Will Green - http://flux.org.uk
 
+# Is there a way to make ActsAsCsv::InstanceMethods::headers accessible in CsvRow
+
 module ActsAsCsv
     def self.included(base)
         base.extend ClassMethods
