@@ -1,0 +1,54 @@
+# 7L7W Week 2 - Io: Day 1
+# Notes for discussion and experimentation
+# Will Green - http://flux.org.uk
+
+Example problems all seem to lead to pages on Seven Languages in Seven Weeks!
+Is this problems as in exercises for Io programmers?
+I found http://iolanguage.org/scm/io/docs/IoGuide.html, but it's not really problems.
+
+Main discussion seems to be on Yahoo Group: http://groups.yahoo.com/neo/groups/iolanguage/info
+
+Io Style Guide: http://en.wikibooks.org/wiki/Io_Programming/Io_Style_Guide
+
+
+Io appears to be strongly typed:
+
+    Io> 1 + 1
+    ==> 2
+    Io> 1 + "one"
+
+      Exception: argument 0 to method '+' must be a Number, not a 'Sequence'
+      ---------
+      message '+' in 'Command Line' on line 1
+
+Contrast with JS (node):
+
+    > 1 + 1
+    2
+    > 1 + "one"
+    '1one'
+    > 
+
+
+Io seems very like Ruby in its truthfulness. Almost everything is true:
+
+    Io> if (0)
+    ==> true
+    Io> if (nil)
+    ==> false
+    Io> if (false)
+    ==> false
+    Io> if ("")
+    ==> true
+
+Sending an object a 'proto' or 'slotNames' message shows the slots a prototype supports.
+Though 'proto' doesn't seem to work as expected on naked 'Object'. It shows Lobby, Protos etc.
+
+
+Different sorts of equals:
+
+=       assign to slot if it exists, otherwise throws exception
+:=      creates slot if it doesn't exist and assign to slot
+::=     creates a slot if it doesn't exist, creates a setter and assigns to slot
+
+
