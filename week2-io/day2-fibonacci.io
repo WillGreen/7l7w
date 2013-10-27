@@ -4,7 +4,7 @@
 
 Fibonacci := Object clone
 
-# calculate with recursion not efficient - O(n²)
+# calculate with recursion: not efficient O(n²)
 Fibonacci recursive := method(n, 
     if(n == 0) then(
         return 0
