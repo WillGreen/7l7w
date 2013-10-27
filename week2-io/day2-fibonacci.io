@@ -27,11 +27,11 @@ Fibonacci direct := method(n,
 f := Fibonacci clone
 
 # Following takes 21s to run on my MacBook Air
-#f recursive(0) println
-#f recursive(1) println
-#f recursive(4) println
-#f recursive(10) println 
-#f recursive(30) println 
+f recursive(0) println
+f recursive(1) println
+f recursive(4) println
+f recursive(10) println 
+f recursive(30) println 
 
 # Following takes 0.1s to run on my MacBook Air
 f direct(0) println
