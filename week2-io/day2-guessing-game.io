@@ -10,13 +10,16 @@ previous_guess_delta := nil
 "You have ten tries to guess a number between 1 and 100." println
 
 10 repeat(
-    guess := File standardInput readLine("What is your guess?\n" ) asNumber
+    guess := File standardInput readLine("What is your guess? " ) asNumber
     if (guess == random_number, ("Spot on. You win." println ;return ))
     guess_delta := (guess - random_number) abs;
     if (previous_guess_delta != nil) then(  # a bit lazy here as I should have used else
         if (guess_delta < previous_guess_delta, "Getting hotter!" println);
         if (guess_delta > previous_guess_delta, "Getting colder." println); 
-        if (guess_delta == previous_guess_delta, "Try something new." println); 
-        ) else( "Sorry. Try again." println)
+        if (guess_delta == previous_guess_delta, "As hot as before." println); 
+        ) else( "Nice guess, but it's not right. Try again." println)
     previous_guess_delta = (guess - random_number) abs
 )
+
+"You ran out of guesses. Nevermind." println
+"The correct answer was #{random_number}." interpolate println
