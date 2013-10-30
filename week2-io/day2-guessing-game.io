@@ -6,8 +6,8 @@
 random_number := (Random value(99.5) + 1) floor  
 previous_guess_delta := nil
 
-"Io Guessing Game\n" println
-"You have ten tries to guess a number between 1 and 100." println
+"\nIo Guessing Game\n================" println
+"You have ten tries to guess a number between 1 and 100.\n" println
 
 10 repeat(
     guess := File standardInput readLine("What is your guess? " ) asNumber
