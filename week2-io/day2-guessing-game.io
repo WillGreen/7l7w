@@ -10,7 +10,7 @@ previous_guess_delta := nil
 "You have ten tries to guess a number between 1 and 100." println
 
 10 repeat(
-    guess := File standardInput readLine("What is your guess?\n" ) asNumber();
+    guess := File standardInput readLine("What is your guess?\n" ) asNumber
     if (guess == random_number, ("Spot on. You win." println ;return ))
     guess_delta := (guess - random_number) abs;
     if (previous_guess_delta != nil) then(

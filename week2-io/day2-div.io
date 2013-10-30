@@ -7,9 +7,9 @@ Number setSlot("div_default", Number getSlot("/"));
 
 # override existing divide method
 Number setSlot("/",
-    method(denominator,
-    if (denominator == 0, return 0);
-    return self div_default(denominator);
+    method(denom,
+        if (denom == 0, return 0);
+        return self div_default(denom);
     )
 );
 
