@@ -13,7 +13,7 @@ previous_guess_delta := nil
     guess := File standardInput readLine("What is your guess?\n" ) asNumber
     if (guess == random_number, ("Spot on. You win." println ;return ))
     guess_delta := (guess - random_number) abs;
-    if (previous_guess_delta != nil) then(
+    if (previous_guess_delta != nil) then(  # a bit lazy here as I should have used else
         if (guess_delta < previous_guess_delta, "Getting hotter!" println);
         if (guess_delta > previous_guess_delta, "Getting colder." println); 
         if (guess_delta == previous_guess_delta, "Try something new." println); 
