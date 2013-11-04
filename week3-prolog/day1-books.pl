@@ -1,4 +1,4 @@
-%% 7L7W Week 1 - Prolog: Day 1
+%% 7L7W Week 3 - Prolog: Day 1
 %% Books and Their Authors
 %% Will Green - http://flux.org.uk
 
