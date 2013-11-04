@@ -1,0 +1,16 @@
+# 7L7W Week 3 - Prolog: Day 2
+# Notes for discussion and experimentation
+# Will Green - http://flux.org.uk
+
+Examples of Prolog Usage
+
+Nasa Clarissa
+Voice operated procedure browser
+http://ti.arc.nasa.gov/tech/cas/user-centered-technologies/clarissa/
+http://sicstus.sics.se/customers.html
+
+Need to find more examples...
+
+Towers of Hanoi
+Nice example with explanation:
+http://www.cs.toronto.edu/~hojjat/384w09/simple-prolog-examples.html
