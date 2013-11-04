@@ -5,13 +5,14 @@
 %% msort is built in
 
 %% Permutation Sort
-%% Test every possible permutation for one where for [H1, H2...] H1 <= H2.
+%% Test every possible permutation for one where  [H1, H2...] H1 =< H2.
 %% This is a terrible way to sort lists as the number of permutations is list size factorial!
 
 perm_sort(List, Sorted) :- permutation(List, Sorted), perm_sorted(Sorted).
 perm_sorted([]).
 perm_sorted([_]).
 perm_sorted([H1,H2|T]) :- H1 =< H2, perm_sorted([H2|T]).
+
 
 %% Minimum Sort (a variant of Select Sort but not in place, or is there a better description?)
 %% Another (slightly less) crude approach, use our minimum predicate and delete elements as we go

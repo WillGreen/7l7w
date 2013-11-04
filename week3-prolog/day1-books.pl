@@ -13,6 +13,9 @@ wrote('Douglas Adams', 'The Hitchhiker\'s Guide to the Galaxy').
 wrote('Douglas Adams', 'The Restaurant at the End of the Universe').
 wrote('Douglas Adams', 'Life, the Universe and Everything').
 
+
+%% Test Examples
+
 %% Find all books written by an author:
 %% wrote('Douglas Adams', What).
 %% wrote('Patrick Rothfuss', What).
