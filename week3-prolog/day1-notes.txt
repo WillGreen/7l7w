@@ -1,0 +1,22 @@
+# 7L7W Week 1 - Prolog: Day 1
+# Notes for discussion and experimentation
+# Will Green - http://flux.org.uk
+
+Prolog Tutorials
+Adapted from Hypercard version!: http://www.doc.gold.ac.uk/~mas02gw/prolog_tutorial/prologpages/
+http://www.learnprolognow.org!
+http://www.csupomona.edu/~jrfisher/www/prolog_tutorial/contents.html
+http://www.thefreecountry.com/documentation/onlineprolog.shtml
+http://www.computing.dcu.ie/~jhayes/Logic/tutorial1.html
+Mostly seem to be from Academia.
+
+Mercury is based on Prolog, but with stronger typing:
+http://www.mercurylang.org
+http://en.wikipedia.org/wiki/Mercury_(programming_language)
+
+Prolog Support Forums
+Stack Overflow: http://stackoverflow.com/questions/tagged/prolog
+Tek Tips (not very active): http://www.tek-tips.com/threadminder.cfm?pid=345
+Prolog Central: http://www.prologcentral.com/forums/
+
+GNU-Prolog Manual: http://gprolog.univ-paris1.fr/manual/gprolog.html
